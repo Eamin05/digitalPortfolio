@@ -1,6 +1,8 @@
 .projects-container {
   width: 100%;
   padding: 30px 0;
+  background: #ffffff;
+
   .projects-wrapper {
     width: 100%;
     display: flex;
@@ -10,42 +12,93 @@
 
     .projects-heading {
       margin-bottom: 30px;
+      text-align: center;
+      opacity: 0;
+      transform: translateY(-20px);
+      animation: fadeIn 0.8s ease-in-out forwards;
+
       h1 {
         font-size: 40px;
+        font-weight: 700;
+        color: #2c3e50;
+        position: relative;
+        display: inline-block;
       }
     }
 
     .projects-cards {
       width: 80%;
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
       gap: 20px;
 
       .proj-card {
-        border: 1px solid #000;
-        border-radius: 20px;
+        background: #ffffff;
+        border: 2px solid #bdc3c7;
+        border-radius: 15px;
         padding: 20px;
         min-height: max-content;
+        position: relative;
+        box-shadow: 0px 4px 12px rgba(44, 62, 80, 0.15);
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        overflow: hidden;
+        opacity: 0;
+        transform: translateY(20px);
+        animation: fadeInUp 0.8s ease-in-out forwards;
 
-        p {
-          a {
-            text-decoration: none;
-            color: #000;
-            font-weight: 600;
-          }
+        &:hover {
+          transform: translateY(-5px); /* Slight lift */
+          box-shadow: 0px 10px 25px rgba(44, 62, 80, 0.2); /* Stronger shadow */
         }
 
         .proj-heading {
           font-size: 18px;
-          margin-bottom: 20px;
-          font-weight: 500;
+          font-weight: 600;
+          margin-bottom: 15px;
+          text-align: center;
+          color: #2c3e50;
         }
 
         .proj-desc {
           font-size: 16px;
           margin-bottom: 20px;
+          text-align: center;
+          color: #7f8c8d;
+        }
+
+        p {
+          text-align: center;
+
+          a {
+            text-decoration: none;
+            color: #2980b9;
+            font-weight: 600;
+          }
         }
       }
     }
+  }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }

@@ -2,19 +2,110 @@
   width: 100%;
   display: flex;
   padding: 50px 30px;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  overflow: hidden;
+
   .intro-part {
     width: 50%;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 0.8s ease-in-out forwards;
+
+    &:nth-child(2) {
+      animation-delay: 0.2s;
+    }
   }
+
   .intro-data {
     padding-left: 40px;
+
     h3 {
       font-size: 40px;
-      padding-bottom: 20px;
+      padding-bottom: 10px;
+      position: relative;
+      display: inline-block;
+      color: #ff6b6b;
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 3px;
+        background: #ff9f43;
+        left: 0;
+        bottom: -5px;
+        transition: width 0.4s ease-in-out;
+      }
+
+      &:hover::after {
+        width: 100%;
+      }
     }
+
     p {
+      margin-top: 12px;
       width: 80%;
       font-size: 18px;
       line-height: 1.5;
+      color: #444;
+      transition: transform 0.3s ease-in-out;
+
+      
     }
+
+    .download-btn {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 12px 25px;
+      font-size: 16px;
+      font-weight: 600;
+      color: white;
+      background: linear-gradient(45deg, #ff6b6b, #ff9f43);
+      border: none;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: all 0.3s ease-in-out;
+      box-shadow: 0px 4px 10px rgba(255, 107, 107, 0.4);
+      position: relative;
+      overflow: hidden;
+
+      &:hover {
+        background: linear-gradient(45deg, #ff9f43, #ff6b6b);
+        transform: scale(1.05);
+        box-shadow: 0px 6px 15px rgba(255, 107, 107, 0.6);
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 300%;
+        height: 300%;
+        background: rgba(255, 255, 255, 0.2);
+        transition: width 0.4s, height 0.4s, top 0.4s, left 0.4s;
+        border-radius: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      &:hover::before {
+        width: 0;
+        height: 0;
+      }
+    }
+  }
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }

@@ -1,13 +1,13 @@
 .navbar-container {
   width: 100%;
   display: flex;
-  // align-items: center;
   justify-content: space-between;
   padding: 0 10px;
 
   .navbar-links-conatiner {
     padding-top: 30px;
     padding-right: 50px;
+
     .navbar-links {
       display: flex;
       align-items: center;
@@ -15,11 +15,34 @@
 
       li {
         list-style: none;
+        
         a {
           text-decoration: none;
-          font-size: 18px;
+          font-size: 20px;
           font-weight: 500;
           letter-spacing: normal;
+          position: relative;
+          transition: color 0.3s ease-in-out;
+
+          &:hover {
+            color: #ff6b6b; // Change color on hover
+          }
+
+          &::after {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background-color: #ff6b6b;
+            left: 50%;
+            bottom: -5px;
+            transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+          }
+
+          &:hover::after {
+            width: 100%;
+            left: 0;
+          }
         }
       }
     }

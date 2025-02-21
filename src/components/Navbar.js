@@ -12,24 +12,18 @@ const NavbarComp = () => {
       <div className="navbar-links-conatiner">
         <ul className={`navbar-links ${playfairDisplay.className}`}>
           <li>
-            <a href="/" target="_blank">
+            <a href="#home" >
               Home
             </a>
           </li>
           <li>
-            <a href="/" target="_blank">
-              About
-            </a>
+          <a href="#about">About</a>
           </li>
           <li>
-            <a href="/" target="_blank">
-              Services
-            </a>
+          <a href="#projects">Projects</a>
           </li>
           <li>
-            <a href="/" target="_blank">
-              Portfolio
-            </a>
+          <a href="#contact">Contact</a>
           </li>
         </ul>
       </div>

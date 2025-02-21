@@ -1,4 +1,4 @@
-.about-container{
+.about-container {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -6,7 +6,7 @@
     align-items: center;
     padding: 20px 0;
 
-    .about-heading{
+    .about-heading {
         font-size: 40px;
         padding-bottom: 20px;
     }
@@ -16,5 +16,29 @@
         text-align: center;
         line-height: 1.5;
         font-size: 18px;
+    }
+
+    /* Tech Stack Section */
+    .tech-stack {
+        margin-top: 30px;
+        text-align: center;
+
+        h3 {
+            font-size: 30px;
+            padding-bottom: 15px;
+            font-weight: bold;
+            color: #ff6b6b; /* Highlighting color */
+        }
+
+        .tech-icons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 10px 0;
+
+            
+        }
     }
 }
