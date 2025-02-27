@@ -1,6 +1,6 @@
 .projects-container {
   width: 100%;
-  padding: 30px 0;
+  padding: 50px 0;
   background: #ffffff;
 
   .projects-wrapper {
@@ -15,13 +15,12 @@
       text-align: center;
       opacity: 0;
       transform: translateY(-20px);
-     
+
       animation: fadeIn 0.8s ease-in-out forwards;
 
       h1 {
         font-size: 40px;
         font-weight: 700;
-        color: #2c3e50;
         position: relative;
         color: #ff6b6b;
         display: inline-block;
@@ -75,6 +74,23 @@
             text-decoration: none;
             color: #2980b9;
             font-weight: 600;
+          }
+        }
+
+        .proj-links {
+          display: flex;
+          justify-content: center;
+          a {
+            display: flex;
+            gap: 5px;
+            color: black;
+            font-size: 16px;
+
+            &:hover {
+              font-size: 18px;
+              transition: 1ms ease-out;
+              color: #ff6b6b;
+            }
           }
         }
       }

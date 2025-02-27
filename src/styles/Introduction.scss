@@ -1,98 +1,100 @@
 .introduction-container {
   width: 100%;
   display: flex;
-  padding: 50px 30px;
   align-items: center;
   justify-content: center;
-  gap: 20px;
-  overflow: hidden;
+  padding: 150px 0;
+  background-image: url("../../public/intro-bkg.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
 
-  .intro-part {
-    width: 50%;
-    opacity: 0;
-    transform: translateY(30px);
-    animation: fadeInUp 0.8s ease-in-out forwards;
+  .intro-wrapper {
+    width: 80vw;
+    display: flex;
+    align-items: center;
 
-    &:nth-child(2) {
-      animation-delay: 0.2s;
-    }
-  }
+    .intro-part {
+      width: 60%;
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeInUp 0.8s ease-in-out forwards;
 
-  .intro-data {
-    padding-left: 40px;
-
-    h3 {
-      font-size: 40px;
-      padding-bottom: 10px;
-      position: relative;
-      display: inline-block;
-      color: #ff6b6b;
-
-      &::after {
-        content: "";
-        position: absolute;
-        width: 0;
-        height: 3px;
-        background: #ff9f43;
-        left: 0;
-        bottom: -5px;
-        transition: width 0.4s ease-in-out;
+      &:nth-child(2) {
+        animation-delay: 0.2s;
       }
 
-      &:hover::after {
+      img {
         width: 100%;
+        height: auto;
       }
     }
 
-    p {
-      margin-top: 12px;
-      width: 80%;
-      font-size: 18px;
-      line-height: 1.5;
-      color: #444;
-      transition: transform 0.3s ease-in-out;
+    .intro-data {
+      h1 {
+        font-size: 60px;
+        margin-bottom: 20px;
+        position: relative;
+        display: inline-block;
+        color: #fff;
+        text-transform: uppercase;
+      }
 
-      
+      p {
+        // margin-top: 12px;
+        margin-bottom: 60px;
+        width: 80%;
+        font-size: 16px;
+        line-height: 1.7;
+        color: #a2a2a2;
+        transition: transform 0.3s ease-in-out;
+      }
+
+      .download-btn {
+        padding: 25px;
+        font-weight: 500;
+        color: #002b36;
+        background: linear-gradient(45deg, #00C9FF, #92FE9D);
+        border: none;
+        // border-radius: 8px;
+        text-decoration: none;
+        transition: all 0.3s ease-in-out;
+        position: relative;
+        overflow: hidden;
+
+        a {
+          font-size: 17px;
+        }
+
+        &:hover {
+          transform: scale(1.05);
+          box-shadow: 0px 6px 15px rgba(107, 255, 245, 0.6);
+        }
+
+        &::before {
+          content: "";
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          width: 300%;
+          height: 300%;
+          // background: rgba(255, 255, 255, 0.2);
+          transition: width 0.4s, height 0.4s, top 0.4s, left 0.4s;
+          border-radius: 50%;
+          transform: translate(-50%, -50%);
+        }
+
+        &:hover::before {
+          width: 0;
+          height: 0;
+        }
+      }
     }
 
-    .download-btn {
-      display: inline-block;
-      margin-top: 15px;
-      padding: 12px 25px;
-      font-size: 16px;
-      font-weight: 600;
-      color: white;
-      background: linear-gradient(45deg, #ff6b6b, #ff9f43);
-      border: none;
-      border-radius: 8px;
-      text-decoration: none;
-      transition: all 0.3s ease-in-out;
-      box-shadow: 0px 4px 10px rgba(255, 107, 107, 0.4);
-      position: relative;
-      overflow: hidden;
-
-      &:hover {
-        background: linear-gradient(45deg, #ff9f43, #ff6b6b);
-        transform: scale(1.05);
-        box-shadow: 0px 6px 15px rgba(255, 107, 107, 0.6);
-      }
-
-      &::before {
-        content: "";
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        width: 300%;
-        height: 300%;
-        background: rgba(255, 255, 255, 0.2);
-        transition: width 0.4s, height 0.4s, top 0.4s, left 0.4s;
-        border-radius: 50%;
-        transform: translate(-50%, -50%);
-      }
-
-      &:hover::before {
-        width: 0;
-        height: 0;
+    .intro-image {
+      img {
+        width: 100%;
+        height: auto;
       }
     }
   }
@@ -107,5 +109,24 @@
   100% {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media screen and (max-width: 912px) {
+  .introduction-container {
+    .intro-part {
+      width: 100%;
+      padding: 30px;
+      &:last-child {
+        display: none;
+      }
+    }
+    .intro-data {
+      padding: 0 30px;
+      p {
+        width: 100%;
+      }
+    }
   }
 }

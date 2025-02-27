@@ -1,45 +1,111 @@
 .about-container {
-    width: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+
+  .about-heading {
+    font-size: 40px;
+    padding-bottom: 20px;
+    color: #ff6b6b;
+  }
+
+  .about-body {
+    width: 50%;
+    text-align: center;
+    line-height: 1.5;
+    font-size: 18px;
+  }
+
+  /* Tech Stack Section */
+  .tech-stack {
+    margin-top: 50px;
+    // text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    padding: 20px 0;
 
-    .about-heading {
-        font-size: 40px;
-        padding-bottom: 20px;
-        color: #ff6b6b;
+    h3 {
+      @extend .about-heading;
     }
 
-    .about-body {
-        width: 50%;
-        text-align: center;
-        line-height: 1.5;
-        font-size: 18px;
-    }
+    .tech-icons-container {
+      width: 70%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
 
-    /* Tech Stack Section */
-    .tech-stack {
-        margin-top: 30px;
-        text-align: center;
-
-        h3 {
-            font-size: 30px;
-            padding-bottom: 15px;
-            font-weight: bold;
-            color: #ff6b6b; /* Highlighting color */
+      .tech-icon {
+        width: 120px;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        .tech-stack-overlay {
+          opacity: 0;
+          transition: 0.5s ease;
+          position: absolute;
+          width: 100px;
+          height: 100px;
+          text-align: center;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 15px;
+          .text {
+            color: white;
+            font-size: 20px;
+          }
         }
-
-        .tech-icons {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 20px;
-            padding: 10px 0;
-
-            
+        &:hover .tech-stack-overlay {
+          opacity: 1;
         }
+        .overlay-html {
+          background-color: #e44d26;
+        }
+        .overlay-css {
+          background-color: #1172b8;
+        }
+        .overlay-sass {
+          background-color: #cd6799;
+        }
+        .overlay-js {
+          background-color: #f7df1e;
+        }
+        .overlay-react {
+          background-color: #00d8ff;
+        }
+        .overlay-next {
+          background-color: #000000;
+        }
+        .overlay-ant {
+          background-color: #f74d5d;
+        }
+        .overlay-aws {
+          background-color: #ff9900;
+        }
+        .overlay-github {
+          background-color: #000000;
+        }
+        .overlay-gitlab {
+          background-color: #09244b;
+        }
+        .overlay-jira {
+          background-color: #227ffa;
+        }
+      }
     }
+  }
+}
+
+// responsive
+@media screen and (max-width: 912px){
+  .about-container{
+    .about-body{
+      width: 85%;
+    }
+  }
 }

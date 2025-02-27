@@ -29,7 +29,7 @@ const ProjectsComp = () => {
               authentication, access control and continuous monitoring
               mechanisms.
             </p>
-            <p>
+            <p className="proj-links">
               <a href="https://github.com/UnicornBank-MajorProject/UnicornBank.git">
                 <GithubOutlined />
                 Github
@@ -54,7 +54,7 @@ const ProjectsComp = () => {
               process, enabling continuous integration and delivery (CI/CD) for
               rapid and reliable updates to the website.
             </p>
-            <p>
+            <p className="proj-links">
               <a href="https://github.com/Eamin05/CloudProject.git">
                 <GithubOutlined />
                 Github

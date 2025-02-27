@@ -1,25 +1,28 @@
 import NavbarComp from "@/components/Navbar";
 import Image from "next/image";
-import "../styles/HomePage.scss";
 import AboutComp from "@/components/About";
 import IntroductionComp from "@/components/Introduction";
 import ProjectsComp from "@/components/Projects";
 import ContactComp from "@/components/ContactMe";
+import "../styles/HomePage.scss";
+import ExperienceComp from "@/components/Experience";
 
 export default function Home() {
   return (
     <div className="home-pg-container">
-      {/* Navbar Component */}
-      
-
       {/* Home Section */}
       <section id="home">
         <IntroductionComp />
       </section>
 
       {/* About Section */}
-      <section id="about">
+      {/* <section id="about">
         <AboutComp />
+      </section> */}
+
+      {/* Experience Section */}
+      <section id="experience">
+        <ExperienceComp />
       </section>
 
       {/* Projects Section */}
