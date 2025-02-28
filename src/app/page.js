@@ -17,14 +17,14 @@ export default function Home() {
       </section>
 
       {/* Tech STack */}
-      <section>
+      <section id="tech-stack">
         <TechStackComp />
       </section>
 
       {/* About Section */}
-      {/* <section id="about">
+      <section id="about">
         <AboutComp />
-      </section> */}
+      </section>
 
       {/* Experience Section */}
       <section id="experience">

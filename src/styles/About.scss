@@ -4,26 +4,29 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 20px 0;
+  padding: 100px 0;
+  background-color: #02050a;
 
   .about-heading {
     font-size: 40px;
     padding-bottom: 20px;
-    color: #ff6b6b;
+    color: #55e6a5;
+    text-transform: uppercase;
   }
 
   .about-body {
-    width: 50%;
+    width: 60%;
     text-align: center;
     line-height: 1.5;
     font-size: 18px;
+    color: #fff;
   }
 }
 
 // responsive
-@media screen and (max-width: 912px){
-  .about-container{
-    .about-body{
+@media screen and (max-width: 912px) {
+  .about-container {
+    .about-body {
       width: 85%;
     }
   }

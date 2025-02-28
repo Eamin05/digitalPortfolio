@@ -29,6 +29,9 @@ const NavbarComp = () => {
               <a href="#home">Home</a>
             </li>
             <li>
+              <a href="#tech-stack">Skills</a>
+            </li>
+            <li>
               <a href="#about">About</a>
             </li>
             <li>
