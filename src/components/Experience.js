@@ -1,15 +1,15 @@
 import React from "react";
 import "../styles/Experience.scss";
-import { dancingScript, playfairDisplay } from "./Fonts";
+import { dancingScript, playfairDisplay, poppins } from "./Fonts";
 
 const ExperienceComp = () => {
   return (
     <div className="exp-container">
       <div className="exp-heading">
-        <h3 className={`${dancingScript.className}`}>Experience</h3>
+        <h3 className={`${poppins.className}`}>Experience</h3>
       </div>
       <div className="exp-body">
-        <div className={`${playfairDisplay.className} timeline`}>
+        <div className={`${poppins.className} timeline`}>
           <div className="timeline__event  animated fadeInUp delay-3s timeline__event--type1">
             <div className="timeline__event__icon "></div>
             <div className="timeline__event__date">JUNE 2024</div>

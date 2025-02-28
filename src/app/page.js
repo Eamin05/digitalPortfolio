@@ -6,6 +6,7 @@ import ProjectsComp from "@/components/Projects";
 import ContactComp from "@/components/ContactMe";
 import "../styles/HomePage.scss";
 import ExperienceComp from "@/components/Experience";
+import TechStackComp from "@/components/TechStack";
 
 export default function Home() {
   return (
@@ -13,6 +14,11 @@ export default function Home() {
       {/* Home Section */}
       <section id="home">
         <IntroductionComp />
+      </section>
+
+      {/* Tech STack */}
+      <section>
+        <TechStackComp />
       </section>
 
       {/* About Section */}

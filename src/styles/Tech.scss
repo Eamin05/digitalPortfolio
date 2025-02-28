@@ -1,0 +1,24 @@
+.tech-stack {
+  padding: 100px 0;
+  // text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #02050a;
+
+  h3 {
+    font-size: 40px;
+    margin-bottom: 60px;
+    color: #55e6a5;
+    text-transform: uppercase;
+  }
+
+  .tech-icons-container {
+    width: 70vw;
+
+    .tech-icon {
+      height: 100px;
+      width: 100px;
+    }
+  }
+}
