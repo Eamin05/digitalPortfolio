@@ -1,21 +1,21 @@
 import React from "react";
-import { dancingScript, playfairDisplay } from "./Fonts";
+import { dancingScript, playfairDisplay, poppins } from "./Fonts";
 import { GithubOutlined } from "@ant-design/icons";
 import "../styles/Projects.scss";
 
 const ProjectsComp = () => {
   return (
     <div className="projects-container">
-      <div className="projects-wrapper">
+      <div className={`projects-wrapper ${poppins.className}`}>
         <div className="projects-heading">
-          <h1 className={`${dancingScript.className}`}>My projects</h1>
+          <h1>My projects</h1>
         </div>
         <div className="projects-cards">
           <div className="proj-card">
-            <p className={`${playfairDisplay.className} proj-heading`}>
+            <p className={`proj-heading`}>
               Cloud Based Secure Banking Application
             </p>
-            <p className={`${playfairDisplay.className} proj-desc`}>
+            <p className={`proj-desc`}>
               {" "}
               Designed and launched a cloud-based banking application. The
               application uses cloud services such as Amazon RDS, CloudFront,
@@ -38,10 +38,10 @@ const ProjectsComp = () => {
           </div>
 
           <div className="proj-card">
-            <p className={`${playfairDisplay.className} proj-heading`}>
+            <p className={` proj-heading`}>
               Cloud Based Super Car E-Commerce Website
             </p>
-            <p className={`${playfairDisplay.className} proj-desc`}>
+            <p className={` proj-desc`}>
               {" "}
               Launched a website on the cloud infrastructure utilizing cloud
               services including CloudFront, S3, CloudFormation, Auto Scaling,
@@ -63,10 +63,10 @@ const ProjectsComp = () => {
           </div>
 
           <div className="proj-card">
-            <p className={`${playfairDisplay.className} proj-heading`}>
+            <p className={` proj-heading`}>
               Street Light using Rotating Solar Panel
             </p>
-            <p className={`${playfairDisplay.className} proj-desc`}>
+            <p className={` proj-desc`}>
               {" "}
               Developed a street light system utilizing Arduino, a solar panel,
               servo motor, and Light Dependent Resistors (LDR). The system
@@ -79,10 +79,8 @@ const ProjectsComp = () => {
           </div>
 
           <div className="proj-card">
-            <p className={`${playfairDisplay.className} proj-heading`}>
-              Butterfly Specimen Portal
-            </p>
-            <p className={`${playfairDisplay.className} proj-desc`}>
+            <p className={`proj-heading`}>Butterfly Specimen Portal</p>
+            <p className={`proj-desc`}>
               {" "}
               Developed a Python program simulating web functionality using
               NumPy, Matplotlib, Pandas, and Termcolor libraries. Project

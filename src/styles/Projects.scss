@@ -1,7 +1,7 @@
 .projects-container {
   width: 100%;
-  padding: 50px 0;
-  background: #ffffff;
+  padding: 100px 0;
+  background: #02050a;
 
   .projects-wrapper {
     width: 100%;
@@ -11,26 +11,23 @@
     justify-content: center;
 
     .projects-heading {
-      margin-bottom: 30px;
+      margin-bottom: 60px;
       text-align: center;
       opacity: 0;
       transform: translateY(-20px);
-
       animation: fadeIn 0.8s ease-in-out forwards;
 
       h1 {
         font-size: 40px;
-        font-weight: 700;
-        position: relative;
-        color: #ff6b6b;
-        display: inline-block;
+        color: #55e6a5;
+        text-transform: uppercase;
       }
     }
 
     .projects-cards {
       width: 80%;
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
       gap: 20px;
 
       .proj-card {
@@ -40,7 +37,6 @@
         padding: 20px;
         min-height: max-content;
         position: relative;
-        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
         transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
         overflow: hidden;
         opacity: 0;
@@ -48,20 +44,21 @@
         animation: fadeInUp 0.8s ease-in-out forwards;
 
         &:hover {
-          transform: scale(1.1); /* Increase size */
-          box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.2); /* Only shadow effect */
+          transform: scale(2); /* Increase size */
+          box-shadow: 0px 15px 30px rgba(255, 255, 255, 0.5); /* Only shadow effect */
         }
 
         .proj-heading {
-          font-size: 18px;
+          font-size: 16px;
           font-weight: 600;
           margin-bottom: 15px;
           text-align: center;
           color: #2c3e50;
+          text-transform: capitalize;
         }
 
         .proj-desc {
-          font-size: 16px;
+          font-size: 14px;
           margin-bottom: 20px;
           text-align: center;
           color: #7f8c8d;
