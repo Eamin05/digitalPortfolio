@@ -8,6 +8,7 @@ import "../styles/HomePage.scss";
 import ExperienceComp from "@/components/Experience";
 import TechStackComp from "@/components/TechStack";
 import EducationComp from "@/components/Education";
+import FooterComp from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -45,6 +46,10 @@ export default function Home() {
       {/* Contact Section */}
       <section id="contact">
         <ContactComp />
+      </section>
+
+      <section>
+        <FooterComp />
       </section>
     </div>
   );
