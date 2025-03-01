@@ -7,6 +7,7 @@ import ContactComp from "@/components/ContactMe";
 import "../styles/HomePage.scss";
 import ExperienceComp from "@/components/Experience";
 import TechStackComp from "@/components/TechStack";
+import EducationComp from "@/components/Education";
 
 export default function Home() {
   return (
@@ -29,6 +30,11 @@ export default function Home() {
       {/* Experience Section */}
       <section id="experience">
         <ExperienceComp />
+      </section>
+
+      {/* Education */}
+      <section id="education">
+        <EducationComp />
       </section>
 
       {/* Projects Section */}
