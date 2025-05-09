@@ -89,6 +89,21 @@ const ProjectsComp = () => {
               storage, and displays on butterfly species and population trends.
             </p>
           </div>
+
+          <div className="proj-card">
+            <p className={`proj-heading`}>Fake News Detection using BERT</p>
+            <p className={`proj-desc`}>
+              {" "}
+              Implemented Fake News Detection using BERT (Bidirectional Encoder
+              Representations from Transformers) to classify news as real or
+              fake.
+            </p>
+            <p className="proj-links">
+              <a href="https://colab.research.google.com/drive/1lpBmr8sMIwynS4rNulXBqTMJmUg4WX4B#scrollTo=QuPrq8v4Pybq">
+                Google Colab
+              </a>
+            </p>
+          </div>
         </div>
       </div>
     </div>

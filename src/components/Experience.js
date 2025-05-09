@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/Experience.scss";
-import { dancingScript, playfairDisplay, poppins } from "./Fonts";
+import { poppins } from "./Fonts";
 
 const ExperienceComp = () => {
   return (
@@ -63,17 +63,20 @@ const ExperienceComp = () => {
             <div className="timeline__event__icon"></div>
             <div className="timeline__event__date">APRIL 2025</div>
             <div className="timeline__event__content">
-              <div className="timeline__event__title">Enabl3 Systems Consulting Private Limited (Internship)</div>
+              <div className="timeline__event__title">
+                Enabl3 Systems Consulting Private Limited (Internship)
+              </div>
               <div className="timeline__event__description">
                 <p>
-                <strong>Role</strong>: MES (Manufacturing Execution System)
+                  <strong>Role</strong>: Associate MES Consultant
                   <br />
-                  <strong>Tech Stack:</strong> Rockwell
+                  <strong>Tech Stack:</strong> PharmaSuite
                   <br />
-                  <strong>Description:</strong> Worked on multiple projects and
-                  learned various new technologies such as React JS, Next JS,
-                  Ant Design, Redux, Axios, etc. Developed frontend for multiple
-                  clients using React JS / Next JS and Ant Design / Material UI.
+                  <strong>Description:</strong> Worked on PharmaSuite, a MES
+                  software used in the pharmaceutical industry. Gained hands-on
+                  experience in the pharmaceutical domain and learned about
+                  manufacturing processes, compliance, and quality control in
+                  the industry.
                 </p>
               </div>
             </div>
